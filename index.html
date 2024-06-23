@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://satorna.github.io/css/footer.css"/>
 	<link rel="stylesheet" href="https://satorna.github.io/css/homePicArea.css"/>
 	<script src="https://satorna.github.io/js/main.js"></script>
+    <script src="C:/Users/dell/Desktop/编程/代码岛/DornGames/SATORNA/js/login.js"></script>
     <style>
         @charset "utf-8";
 body{
@@ -157,7 +158,7 @@ body{
         .btn {
             padding: 10px;
             text-align: center;
-            margin-top: 40px;
+            margin-top: 20px;
             background-image: linear-gradient(to right, rgb(246,239,184), rgb(119,234,173));
             color: #fff;
             border-radius: 10px;
@@ -216,6 +217,12 @@ body{
             text-decoration-color: rgba(30, 144, 30, 1);
             text-decoration-thickness: 2px;
         }
+        #errorP{
+            display: none;
+            color: red;
+            font-size: 10px;
+            line-height: 0px;
+        }
     </style>
 </head>
 
@@ -256,7 +263,8 @@ body{
             <div class="form-wrapper">
                 <input type="text" name="username" placeholder="-游戏存档码-" class="input-item">
                 <input type="text" name="pswd" placeholder="-验证码-" class="input-item">
-                <div class="btn">登录</div>
+                <p id="errorP">404_error</p>
+                <div class="btn" onclick="login()">登录</div>
                 <br>
             </div>
         </div>
